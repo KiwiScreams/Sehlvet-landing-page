@@ -5,6 +5,23 @@ import img3 from "../../assets/images/images/nikita-kachanovsky-GY6ViMxtmDE-unsp
 import bookmarkIcon from "../../assets/images/icons/Bookmark.svg";
 import bagIcon from "../../assets/images/icons/Bag.svg";
 const Trending = () => {
+  const boxes = [
+    {
+      image: img1,
+      title: "Formal Shirt For Woman",
+      price: "$25.38",
+    },
+    {
+      image: img2,
+      title: "Black and gray Exercise outfit",
+      price: "$12.28",
+    },
+    {
+      image: img3,
+      title: "Yellow Jacket For Winter",
+      price: "$14.55",
+    },
+  ];
   return (
     <>
       <section className="trending--component">
@@ -15,45 +32,21 @@ const Trending = () => {
           <p>Have a look on what's trending now!</p>
         </div>
         <div className="images">
-          <div className="box">
-            <div className="image-container">
-              <img src={img1} alt="" />
-            </div>
-            <h4>Formal Shirt For Woman</h4>
-            <div className="box-bottom">
-              <p>Price: $25.38</p>
-              <div className="flex-box">
-                <img src={bookmarkIcon} alt="" />
-                <img src={bagIcon} alt="" />
+          {boxes.map((box, index) => (
+            <div key={index} className="box">
+              <div className="image-container">
+                <img src={box.image} alt="" />
+              </div>
+              <h4>{box.title}</h4>
+              <div className="box-bottom">
+                <p>Price: {box.price}</p>
+                <div className="flex-box">
+                  <img src={bookmarkIcon} alt="" />
+                  <img src={bagIcon} alt="" />
+                </div>
               </div>
             </div>
-          </div>
-          <div className="box">
-            <div className="image-container">
-              <img src={img2} alt="" />
-            </div>
-            <h4>Black and gray Exercise outfit</h4>
-            <div className="box-bottom">
-              <p>Price: $12.28</p>
-              <div className="flex-box">
-                <img src={bookmarkIcon} alt="" />
-                <img src={bagIcon} alt="" />
-              </div>
-            </div>
-          </div>
-          <div className="box">
-            <div className="image-container">
-              <img src={img3} alt="" />
-            </div>
-            <h4>Yellow Jacket For Winter  </h4>
-            <div className="box-bottom">
-              <p>Price: $14.55</p>
-              <div className="flex-box">
-                <img src={bookmarkIcon} alt="" />
-                <img src={bagIcon} alt="" />
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
     </>
