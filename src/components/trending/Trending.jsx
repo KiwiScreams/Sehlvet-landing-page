@@ -28,6 +28,32 @@ const Trending = () => {
               </div>
             </div>
           </div>
+          <div className="box">
+            <div className="image-container">
+              <img src={img2} alt="" />
+            </div>
+            <h4>Black and gray Exercise outfit</h4>
+            <div className="box-bottom">
+              <p>Price: $12.28</p>
+              <div className="flex-box">
+                <img src={bookmarkIcon} alt="" />
+                <img src={bagIcon} alt="" />
+              </div>
+            </div>
+          </div>
+          <div className="box">
+            <div className="image-container">
+              <img src={img3} alt="" />
+            </div>
+            <h4>Yellow Jacket For Winter  </h4>
+            <div className="box-bottom">
+              <p>Price: $14.55</p>
+              <div className="flex-box">
+                <img src={bookmarkIcon} alt="" />
+                <img src={bagIcon} alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>
