@@ -22,3 +22,7 @@
   --font-size-18px: 18px;
   --font-size-96px: 96px;
 }
+button, a
+{
+  cursor: pointer;
+}
