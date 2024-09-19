@@ -76,7 +76,7 @@ header.mobile
     bottom: 0;
     background-color: red;
 }
-header.mobile nav
+header.mobile nav.open
 {
     position: absolute;
     top: 80px;
@@ -88,6 +88,10 @@ header.mobile nav
     box-shadow: 0 0 10px #00000075;
     text-align: center;
     flex-direction: column;
+}
+header.mobile nav.closed
+{
+    display: none;
 }
 header.mobile nav a
 {

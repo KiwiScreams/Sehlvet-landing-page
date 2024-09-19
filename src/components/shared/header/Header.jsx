@@ -52,7 +52,7 @@ const Header = () => {
         <h1>
           <NavLink to="/">Sehlvet</NavLink>
         </h1>
-        <nav>
+        <nav className={`${isMenuOpen ? "open" : "closed"}`}>
           <NavLink
             to="/"
             className={({ isActive }) => (isActive ? "active" : "")}
