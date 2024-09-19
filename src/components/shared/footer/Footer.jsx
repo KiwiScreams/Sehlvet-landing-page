@@ -11,6 +11,12 @@ const Footer = () => {
     { title: "Brands", to: "/brands" },
     { title: "About Us", to: "/about" },
   ];
+  const contactInfo = [
+    { text: "Contact Us" },
+    { text: "525-252-4244" },
+    { text: "sehlvet@gmail.com" },
+    { text: "www.selvet.com" },
+  ];
   return (
     <>
       <footer>
@@ -32,10 +38,9 @@ const Footer = () => {
           ))}
         </ul>
         <ul>
-          <li>Contact Us</li>
-          <li>525-252-4244</li>
-          <li>sehlvet@gmail.com</li>
-          <li>www.selvet.com</li>
+          {contactInfo.map((item, index) => (
+            <li key={index}>{item.text}</li>
+          ))}
         </ul>
       </footer>
     </>
