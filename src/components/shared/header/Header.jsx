@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Header.css";
+import bookmarkIcon from "../../../assets/images/icons/Bookmark.svg";
+import bagIcon from "../../../assets/images/icons/Bag.svg";
 const Header = () => {
   return (
     <>
@@ -13,6 +15,10 @@ const Header = () => {
             <Link to="/brands">Brands</Link>
             <Link to="/about">About Us</Link>
         </nav>
+        <div>
+            <img src={bookmarkIcon} alt="" />
+            <img src={bagIcon} alt="" />
+        </div>
       </header>
     </>
   );
