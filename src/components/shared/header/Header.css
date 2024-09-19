@@ -3,7 +3,10 @@ header
     width: 100%;
     background-color: red;
     display: flex;
-    justify-content: space-between;
+    justify-content: 
+    space-between;
+    position: absolute;
+    top: 0;
     align-items: center;
     padding: 62px 102px 0 102px;
 }
