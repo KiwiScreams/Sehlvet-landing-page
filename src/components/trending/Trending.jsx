@@ -41,7 +41,7 @@ const Trending = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div className="main">
             <div className="box">
               <div className="image-container">
                 <img src={img3} alt="" />
