@@ -66,6 +66,33 @@ header .cart .quantity
     align-items: center;
     top: 0;
 }
+header.desktop
+{
+    display: none;
+}
+header.mobile
+{
+    position: relative;
+    bottom: 0;
+    background-color: red;
+}
+header.mobile nav
+{
+    position: absolute;
+    top: 80px;
+    gap: 20px;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+    background-color: var(--light-brown-clr);
+    box-shadow: 0 0 10px #00000075;
+    text-align: center;
+    flex-direction: column;
+}
+header.mobile nav a
+{
+    font-size: var(--font-size-18px);
+}
 @media screen and (max-width: 950px)
 {
     header
