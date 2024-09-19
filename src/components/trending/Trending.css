@@ -69,3 +69,9 @@
     gap: 40px;
     align-items: center;
 }
+.trending--component .images
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
