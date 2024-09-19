@@ -1,4 +1,7 @@
 import "./Trending.css";
+import img1 from "../../assets/images/images/nikita-kachanovsky-GY6ViMxtmDE-unsplash.png";
+import img2 from "../../assets/images/images/nathan-dumlao-aT2Voo0gyVE-unsplash.png";
+import img3 from "../../assets/images/images/nikita-kachanovsky-GY6ViMxtmDE-unsplash (1).png";
 const Trending = () => {
   return (
     <>
