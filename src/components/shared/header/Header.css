@@ -66,15 +66,10 @@ header .cart .quantity
     align-items: center;
     top: 0;
 }
-header.desktop
-{
-    display: none;
-}
 header.mobile
 {
     position: relative;
-    bottom: 0;
-    background-color: red;
+    display: none;
 }
 header.mobile nav.open
 {
@@ -163,5 +158,13 @@ header.mobile .bar-container
     header.desktop
     {
         display: none;
+    }
+    header.mobile
+    {
+        display: flex;
+    }
+    header.mobile .icons
+    {
+        gap: 12px;
     }
 }
