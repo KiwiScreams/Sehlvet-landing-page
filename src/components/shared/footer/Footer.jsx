@@ -5,6 +5,12 @@ import linkedinIcon from "../../../assets/images/icons/Group 55.svg";
 import twitterIcon from "../../../assets/images/icons/Group 56.svg";
 import { Link } from "react-router-dom";
 const Footer = () => {
+  const links = [
+    { title: "Home", to: "/" },
+    { title: "Collections", to: "/collections" },
+    { title: "Brands", to: "/brands" },
+    { title: "About Us", to: "/about" },
+  ];
   return (
     <>
       <footer>
@@ -19,18 +25,11 @@ const Footer = () => {
           </div>
         </div>
         <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/collections">Collections</Link>
-          </li>
-          <li>
-            <Link to="/brands">Brands</Link>
-          </li>
-          <li>
-            <Link to="/about">About Us</Link>
-          </li>
+          {links.map((link, index) => (
+            <li key={index}>
+              <Link to={link.to}>{link.title}</Link>
+            </li>
+          ))}
         </ul>
         <ul>
           <li>Contact Us</li>
