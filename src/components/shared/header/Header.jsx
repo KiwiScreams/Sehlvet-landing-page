@@ -5,7 +5,7 @@ import bagIcon from "../../../assets/images/icons/Bag.svg";
 const Header = () => {
   return (
     <>
-      <header>
+      <header className="desktop">
         <h1>
           <NavLink to="/">Sehlvet</NavLink>
         </h1>
