@@ -66,3 +66,105 @@ header .cart .quantity
     align-items: center;
     top: 0;
 }
+header.mobile
+{
+    position: relative;
+    display: none;
+}
+header.mobile nav.open
+{
+    position: absolute;
+    top: 80px;
+    gap: 20px;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+    background-color: var(--light-brown-clr);
+    box-shadow: 0 0 10px #00000075;
+    text-align: center;
+    flex-direction: column;
+    animation: navOpen 1s ease-in-out;
+}
+header.mobile nav.closed
+{
+    display: none;
+}
+header.mobile nav a
+{
+    font-size: var(--font-size-18px);
+}
+header.mobile .bar-container
+{
+    display: inline-block;
+    cursor: pointer;
+}
+.bar1,
+.bar2,
+.bar3
+{
+    width: 35px;
+    height: 3px;
+    background-color: var(--dark-clr);
+    margin: 6px 0;
+    border-radius: 40px;
+    transition: 0.4s;
+}
+.bar2
+{
+    width: 20px;
+    margin-left: auto;
+}
+.change .bar1
+{
+    transform: rotate(45deg);
+}
+.change .bar2
+{
+    opacity: 0;
+}
+.change .bar3
+{
+    transform: rotate(-45deg);
+}
+@keyframes navOpen
+{
+    from
+    {
+        opacity: 0;
+        top: 10px;
+    }
+    to
+    {
+        opacity: 1;
+        top: 80px;
+    }
+}
+@media screen and (max-width: 950px)
+{
+    header
+    {
+        padding: 32px 32px 0 32px;
+    }
+}
+@media screen and (max-width: 750px)
+{
+    header
+    {
+        padding: 32px 12px 0 12px;
+    }
+}
+@media screen and (max-width: 680px)
+{
+    header.desktop
+    {
+        display: none;
+    }
+    header.mobile
+    {
+        display: flex;
+    }
+    header.mobile .icons
+    {
+        gap: 12px;
+    }
+}
