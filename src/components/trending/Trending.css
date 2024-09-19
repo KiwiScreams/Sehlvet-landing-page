@@ -1,0 +1,71 @@
+.trending--component
+{
+    padding: 0 85px 0 100px;
+    width: 100%;
+}
+.trending--component h2
+{
+    font-size: var(--font-size-24px);
+    color: var(--dark-clr);
+    border-bottom: 2px solid var(--brown-clr);
+    width: fit-content;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.trending--component h2 span
+{
+    font-size: var(--font-size-36px);
+}
+.trending--component .trending-header p
+{
+    color: var(--dark-clr);
+    font-size: var(--font-size-18px);
+}
+.trending--component .trending-header
+{
+    margin-bottom: 14px;
+}
+.trending--component .images
+{
+    width: 100%;
+}
+.trending--component .box
+{
+    border-radius: 15px;
+    border: 2px solid var(--brown-clr);
+    padding: 24px;
+    width: fit-content;
+}
+.trending--component .box .image-container
+{
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.trending--component .box .image-container img
+{
+    width: 100%;
+}
+.trending--component h4
+{
+    color: var(--dark-clr);
+    font-size: var(--font-size-24px);
+    margin-bottom: 38px;
+}
+.trending--component .box-bottom
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.trending--component .box-bottom p
+{
+    color: var(--dark-clr);
+    font-size: var(--font-size-18px);
+}
+.trending--component .flex-box
+{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
