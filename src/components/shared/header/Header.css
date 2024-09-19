@@ -23,6 +23,20 @@ header nav a
 {
     color: var(--dark-clr);
     font-size: var(--font-size-24px);
+    position: relative;
+}
+header nav a.active::after
+{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: var(--dark-clr);
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
 }
 header h1
 {
