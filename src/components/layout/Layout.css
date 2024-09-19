@@ -38,6 +38,11 @@
 .layout--component button:hover
 {
     background-color: transparent;
+    color: var(--brown-clr);
+}
+.layout--component button:hover svg > path
+{
+    stroke: var(--brown-clr);
 }
 @media screen and (max-width: 1500px)
 {
