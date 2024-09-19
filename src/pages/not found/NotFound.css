@@ -35,3 +35,17 @@
     margin: auto;
     align-items: center;
 }
+@media screen and (max-width: 450px)
+{
+    .not-found--page p
+    {
+        font-size: var(--font-size-18px);
+        width: 90%;
+    }
+    .not-found--page .error-image
+    {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+}

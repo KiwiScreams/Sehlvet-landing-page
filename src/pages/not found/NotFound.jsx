@@ -9,7 +9,7 @@ const NotFound = () => {
             <img src={errorImg} alt="" />
           </div>
           <div className="error-text">
-            <h2>Oops</h2>
+            <h2>Oops...</h2>
             <p>
               We couldn't find that page. Please check the URL or return to the
               homepage.
