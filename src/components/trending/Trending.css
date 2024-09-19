@@ -69,3 +69,71 @@
     gap: 40px;
     align-items: center;
 }
+.trending--component .images
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.trending--component button
+{
+    width: 222px;
+    height: 60px;
+    border: 2px solid var(--brown-clr);
+    color: var(--brown-clr);
+    font-size: var(--font-size-24px);
+    background-color: transparent;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 36px;
+    margin-top: 57px;
+    margin-left: auto;
+}
+.trending--component button:hover
+{
+    color: var(--white-clr);
+    background-color: var(--brown-clr);
+}
+.trending--component button:hover svg > path
+{
+    stroke: var(--white-clr);
+}
+@media screen and (max-width: 1360px)
+{
+    .trending--component .images
+    {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .trending--component .box
+    {
+        width: 80%;
+    }
+    .trending--component .main
+    {
+        width: 80%;
+    
+    }
+    .trending--component .main .box
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 680px)
+{
+    .trending--component .box
+    {
+        width: 100%;
+    }
+    .trending--component .main
+    {
+        width: 100%;
+    }
+    .trending--component
+    {
+        padding: 0 10px 0 10px;
+        width: 100%;
+    }
+}
