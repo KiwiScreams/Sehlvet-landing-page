@@ -3,8 +3,19 @@ import Home from "./pages/home/Home";
 import NotFound from "./pages/not found/NotFound";
 import Header from "./components/shared/header/Header";
 import Footer from "./components/shared/footer/Footer";
-
+import { useLocation } from "react-router-dom";
+import { useEffect, usestate } from "react";
 function App() {
+  const location = useLocation();
+  useEffect(() => {
+    switch (location.pathname) {
+      case "/":
+        document.title = "Sehlvet | Home";
+        break;
+      default:
+        document.title = "Sehlvet";
+    }
+  }, [location]);
   return (
     <>
       <Header />
