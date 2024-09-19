@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
 import bookmarkIcon from "../../../assets/images/icons/Bookmark.svg";
 import bagIcon from "../../../assets/images/icons/Bag.svg";
@@ -7,13 +7,33 @@ const Header = () => {
     <>
       <header>
         <h1>
-          <Link to="/">Sehlvet</Link>
+          <NavLink to="/">Sehlvet</NavLink>
         </h1>
         <nav>
-          <Link to="/">Home</Link>
-          <Link to="/collections">Collections</Link>
-          <Link to="/brands">Brands</Link>
-          <Link to="/about">About Us</Link>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/collections"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Collections
+          </NavLink>
+          <NavLink
+            to="/brands"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Brands
+          </NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            About Us
+          </NavLink>
         </nav>
         <div className="icons">
           <img src={bookmarkIcon} alt="" />
