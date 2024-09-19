@@ -10,14 +10,17 @@ const Header = () => {
           <Link to="/">Sehlvet</Link>
         </h1>
         <nav>
-            <Link to="/">Home</Link>
-            <Link to="/collections">Collections</Link>
-            <Link to="/brands">Brands</Link>
-            <Link to="/about">About Us</Link>
+          <Link to="/">Home</Link>
+          <Link to="/collections">Collections</Link>
+          <Link to="/brands">Brands</Link>
+          <Link to="/about">About Us</Link>
         </nav>
-        <div>
-            <img src={bookmarkIcon} alt="" />
+        <div className="icons">
+          <img src={bookmarkIcon} alt="" />
+          <div className="cart">
             <img src={bagIcon} alt="" />
+            <div className="quantity">0</div>
+          </div>
         </div>
       </header>
     </>
