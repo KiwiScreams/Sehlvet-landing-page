@@ -2,7 +2,12 @@ import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
 import bookmarkIcon from "../../../assets/images/icons/Bookmark.svg";
 import bagIcon from "../../../assets/images/icons/Bag.svg";
+import { useState, useEffect } from "react";
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
     <>
       <header className="desktop">
@@ -79,7 +84,10 @@ const Header = () => {
             <img src={bagIcon} alt="" />
             <div className="quantity">0</div>
           </div>
-          <div className="bar-container">
+          <div
+            className={`bar-container ${isMenuOpen ? "change" : ""}`}
+            onClick={handleMenuToggle}
+          >
             <div className="bar1"></div>
             <div className="bar2"></div>
             <div className="bar3"></div>
