@@ -3,11 +3,24 @@ import "./Header.css";
 import bookmarkIcon from "../../../assets/images/icons/Bookmark.svg";
 import bagIcon from "../../../assets/images/icons/Bag.svg";
 import { useState, useEffect } from "react";
+import { useRef } from "react";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const mobileHeaderRef = useRef(null);
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const handleClickOutside = (event) => {
+    if (!mobileHeaderRef.current.contains(event.target)) {
+      setIsMenuOpen(false);
+    }
+  };
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
   return (
     <>
       <header className="desktop">
@@ -48,11 +61,13 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <header className="mobile">
+      <header className="mobile" ref={mobileHeaderRef}>
         <h1>
           <NavLink to="/">Sehlvet</NavLink>
         </h1>
-        <nav className={`${isMenuOpen ? "open" : "closed"}`}>
+        <nav
+          className={`${isMenuOpen ? "open" : "closed"}`}
+        >
           <NavLink
             to="/"
             className={({ isActive }) => (isActive ? "active" : "")}
