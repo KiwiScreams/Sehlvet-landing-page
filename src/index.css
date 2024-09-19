@@ -9,3 +9,10 @@
   outline: none;
   transition: 0.3s;
 }
+:root
+{
+  --white-clr: #fff;
+  --black-clr: #000;
+  --dark-clr: #2F2F2F;
+  --brown-clr: #754F23;
+}
