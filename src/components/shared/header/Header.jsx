@@ -79,6 +79,11 @@ const Header = () => {
             <img src={bagIcon} alt="" />
             <div className="quantity">0</div>
           </div>
+          <div className="bar-container">
+            <div className="bar1"></div>
+            <div className="bar2"></div>
+            <div className="bar3"></div>
+          </div>
         </div>
       </header>
     </>
