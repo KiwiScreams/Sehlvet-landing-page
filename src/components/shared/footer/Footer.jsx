@@ -17,6 +17,12 @@ const Footer = () => {
     { text: "sehlvet@gmail.com" },
     { text: "www.selvet.com" },
   ];
+  const socialIcons = [
+    { src: facebookIcon, alt: "" },
+    { src: linkedinIcon, alt: "" },
+    { src: twitterIcon, alt: "" },
+    { src: instagramIcon, alt: "" },
+  ];
   return (
     <>
       <footer>
@@ -24,10 +30,9 @@ const Footer = () => {
           <h2>Sehlvet</h2>
           <p>2023 Sehlvet . All Rights Reserved</p>
           <div className="soc-icons">
-            <img src={facebookIcon} alt="" />
-            <img src={linkedinIcon} alt="" />
-            <img src={twitterIcon} alt="" />
-            <img src={instagramIcon} alt="" />
+            {socialIcons.map((icon, index) => (
+              <img key={index} src={icon.src} alt={icon.alt} />
+            ))}
           </div>
         </div>
         <ul>
