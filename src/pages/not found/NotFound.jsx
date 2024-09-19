@@ -10,7 +10,10 @@ const NotFound = () => {
           </div>
           <div className="error-text">
             <h2>Oops</h2>
-            <p>...</p>
+            <p>
+              We couldn't find that page. Please check the URL or return to the
+              homepage.
+            </p>
           </div>
         </div>
       </section>
