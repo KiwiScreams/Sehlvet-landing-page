@@ -1,0 +1,68 @@
+header
+{
+    width: 100%;
+    display: flex;
+    justify-content: 
+    space-between;
+    position: absolute;
+    top: 0;
+    align-items: center;
+    padding: 62px 102px 0 102px;
+}
+header nav
+{
+    display: flex;
+    gap: 32px;
+}
+header h1 a
+{
+    font-size: var(--font-size-36px);
+    color: var(--dark-clr);
+}
+header nav a
+{
+    color: var(--dark-clr);
+    font-size: var(--font-size-24px);
+    position: relative;
+}
+header nav a.active::after
+{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: var(--dark-clr);
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+header h1
+{
+    color: var(--dark-clr);
+    font-size: var(--font-size-36px);
+}
+header div.icons
+{
+    display: flex;
+    gap: 30px;
+}
+header .cart
+{
+    position: relative;
+}
+header .cart .quantity
+{
+    font-size: var(--font-size-12px);
+    color: var(--light-brown-clr);
+    position: absolute;
+    background-color: var(--brown-clr);
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
