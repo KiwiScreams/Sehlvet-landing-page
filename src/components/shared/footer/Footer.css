@@ -36,6 +36,15 @@ footer ul li a
     color: var(--light-brown-clr);
     font-size: var(--font-size-16px);
 }
+footer .soc-icons img
+{
+    cursor: pointer;
+}
+footer .soc-icons img:hover
+{
+    opacity: 0.9;
+    transform: rotate(30deg);
+}
 @media screen and (max-width: 800px)
 {
     footer
