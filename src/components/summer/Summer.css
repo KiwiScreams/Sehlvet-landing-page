@@ -37,7 +37,6 @@
 .summer--component .summer-body .left-container,
 .summer--component .summer-body .right-container
 {
-    width: 50%;
     width: fit-content;
 }
 .summer--component .summer-body .left-container p,
@@ -90,4 +89,49 @@
 .summer--component button:hover svg > path
 {
     stroke: var(--white-clr);
+}
+@media screen and (max-width: 1200px)
+{
+    .summer--component
+    {
+        padding: 0 10px 0 10px;
+    }
+}
+@media screen and (max-width: 1200px)
+{
+    .summer--component .summer-body
+    {
+        flex-direction: column;
+    }
+    .summer--component p
+    {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .summer--component .summer-body .left-container,
+    .summer--component .summer-body .right-container
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 560px)
+{
+    .summer--component .summer-body
+    {
+        flex-direction: column;
+    }
+    .summer--component p
+    {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .summer--component .summer-body .left-container,
+    .summer--component .summer-body .right-container
+    {
+        width: 100%;
+    }
+    .summer--component img
+    {
+        margin: auto;
+    }
 }
