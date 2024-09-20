@@ -1,5 +1,7 @@
 import "./Summer.css";
 import img1 from "../../assets/images/images/Rectangle 14.png";
+import img2 from "../../assets/images/images/Rectangle 13.png";
+import img3 from "../../assets/images/images/Rectangle 15.png";
 const Summer = () => {
   return (
     <>
@@ -19,15 +21,15 @@ const Summer = () => {
               period of time.
             </p>
           </div>
-          <div className="left-container">
+          <div className="right-container">
             <p>
               Our main aim is to serve our customer with better quality product.
               We try to understand their needs and provide them within a short
               period of time.
             </p>
             <div className="img-container">
-              <img src={img1} alt="" />
-              <img src={img1} alt="" />
+              <img src={img2} alt="" />
+              <img src={img3} alt="" />
             </div>
             <button>Explore</button>
           </div>

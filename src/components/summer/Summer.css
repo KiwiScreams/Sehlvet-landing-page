@@ -26,3 +26,47 @@
 {
     margin-bottom: 14px;
 }
+.summer--component .summer-body
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    width: 100%;
+}
+.summer--component .summer-body .left-container,
+.summer--component .summer-body .right-container
+{
+    width: 50%;
+    width: fit-content;
+}
+.summer--component .summer-body .left-container p,
+.summer--component .summer-body .right-container p
+{
+    width: 543px;
+    font-size: var(--font-size-18px);
+    color: var(--dark-clr);
+    margin-top: 42px;
+}
+.summer--component .summer-body .right-container p
+{
+    margin: auto;
+    margin-bottom: 36px;
+    margin-top: 0;
+}
+.summer--component .right-container .img-container
+{
+    width: fit-content;
+    position: relative;
+    margin: auto;
+}
+.summer--component .right-container img
+{
+    background-color: red;
+}
+.summer--component .right-container img:nth-child(2)
+{
+    position: absolute;
+    bottom: -56px;
+    left: -56px;
+}
