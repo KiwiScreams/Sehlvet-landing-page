@@ -1,5 +1,6 @@
 import Customer from "../../components/customer/Customer";
 import Layout from "../../components/layout/Layout";
+import Summer from "../../components/summer/Summer";
 import Trending from "../../components/trending/Trending";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <>
       <Layout />
       <Trending />
+      <Summer />
       <Customer />
     </>
   );
