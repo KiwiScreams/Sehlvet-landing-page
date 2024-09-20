@@ -13,7 +13,7 @@ const Layout = () => {
             services are super fast and we update within 24 hours.
           </p>
           <button>
-            Explore{" "}
+            Explore
             <svg
               width="36"
               height="16"
