@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 85px 0 100px;
+    animation: layoutAnim 1s ease-in-out;
 }
 .layout--component .text-container
 {
@@ -43,6 +44,23 @@
 .layout--component button:hover svg > path
 {
     stroke: var(--brown-clr);
+}
+.layout--component img
+{
+    z-index: -2;
+}
+@keyframes layoutAnim
+{
+    from
+    {
+        padding: 0 0px 0 0px;
+        opacity: 0;
+    }
+    to
+    {
+        padding: 0 85px 0 100px;
+        opacity: 1;
+    }
 }
 @media screen and (max-width: 1500px)
 {
