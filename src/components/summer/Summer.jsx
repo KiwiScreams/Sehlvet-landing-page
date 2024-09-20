@@ -14,7 +14,7 @@ const Summer = () => {
         </div>
         <div className="summer-body">
           <div className="left-container">
-            <img src={img1} alt="" />
+            <img src={img1} alt="sehlvet" />
             <p>
               Our main aim is to serve our customer with better quality product.
               We try to understand their needs and provide them within a short
@@ -28,8 +28,8 @@ const Summer = () => {
               period of time.
             </p>
             <div className="img-container">
-              <img src={img2} alt="" />
-              <img src={img3} alt="" />
+              <img src={img2} alt="sehlvet" />
+              <img src={img3} alt="sehlvet" />
             </div>
             <button>
               Explore
