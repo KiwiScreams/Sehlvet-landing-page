@@ -38,7 +38,7 @@ const Layout = () => {
             </svg>
           </button>
         </div>
-        <img src={womanImage} alt="" />
+        <img src={womanImage} alt="sehvlet" />
       </section>
     </>
   );

@@ -17,41 +17,41 @@ const Trending = () => {
         <div className="images">
           <div className="box">
             <div className="image-container">
-              <img src={img1} alt="" />
+              <img src={img1} alt="sehvlet" />
             </div>
             <h4>Formal Shirt For Woman</h4>
             <div className="box-bottom">
               <p>Price: $25.38</p>
               <div className="flex-box">
-                <img src={bookmarkIcon} alt="" />
-                <img src={bagIcon} alt="" />
+                <img src={bookmarkIcon} alt="bookmark icon" />
+                <img src={bagIcon} alt="bag icon" />
               </div>
             </div>
           </div>
           <div className="box">
             <div className="image-container">
-              <img src={img2} alt="" />
+              <img src={img2} alt="sehvlet" />
             </div>
             <h4>Black and gray Exercise outfit</h4>
             <div className="box-bottom">
               <p>Price: $12.28</p>
               <div className="flex-box">
-                <img src={bookmarkIcon} alt="" />
-                <img src={bagIcon} alt="" />
+                <img src={bookmarkIcon} alt="bookmark icon" />
+                <img src={bagIcon} alt="bag icon" />
               </div>
             </div>
           </div>
           <div className="main">
             <div className="box">
               <div className="image-container">
-                <img src={img3} alt="" />
+                <img src={img3} alt="sehvlet" />
               </div>
               <h4>Yellow Jacket For Winter </h4>
               <div className="box-bottom">
                 <p>Price: $14.55</p>
                 <div className="flex-box">
-                  <img src={bookmarkIcon} alt="" />
-                  <img src={bagIcon} alt="" />
+                  <img src={bookmarkIcon} alt="bookmark icon" />
+                  <img src={bagIcon} alt="bag icon" />
                 </div>
               </div>
             </div>
