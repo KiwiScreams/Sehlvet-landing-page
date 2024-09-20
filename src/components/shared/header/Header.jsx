@@ -54,9 +54,9 @@ const Header = () => {
           </NavLink>
         </nav>
         <div className="icons">
-          <img src={bookmarkIcon} alt="" />
+          <img src={bookmarkIcon} alt="bookmark icon" />
           <div className="cart">
-            <img src={bagIcon} alt="" />
+            <img src={bagIcon} alt="bag icon" />
             <div className="quantity">0</div>
           </div>
         </div>
@@ -94,9 +94,9 @@ const Header = () => {
           </NavLink>
         </nav>
         <div className="icons">
-          <img src={bookmarkIcon} alt="" />
+          <img src={bookmarkIcon} alt="bookmark icon" />
           <div className="cart">
-            <img src={bagIcon} alt="" />
+            <img src={bagIcon} alt="bag icon" />
             <div className="quantity">0</div>
           </div>
           <div

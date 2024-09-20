@@ -6,7 +6,7 @@ const NotFound = () => {
       <section className="not-found--page">
         <div className="not-found-container">
           <div className="error-image">
-            <img src={errorImg} alt="" />
+            <img src={errorImg} alt="not found image" />
           </div>
           <div className="error-text">
             <h2>Oops...</h2>

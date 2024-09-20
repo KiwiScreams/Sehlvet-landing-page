@@ -18,10 +18,10 @@ const Footer = () => {
     { text: "www.selvet.com" },
   ];
   const socialIcons = [
-    { src: facebookIcon, alt: "" },
-    { src: linkedinIcon, alt: "" },
-    { src: twitterIcon, alt: "" },
-    { src: instagramIcon, alt: "" },
+    { src: facebookIcon, alt: "facebook icon" },
+    { src: linkedinIcon, alt: "linkedin icon" },
+    { src: twitterIcon, alt: "twitter icon" },
+    { src: instagramIcon, alt: "instagram icon" },
   ];
   return (
     <>

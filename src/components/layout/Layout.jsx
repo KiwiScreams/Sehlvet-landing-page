@@ -24,21 +24,21 @@ const Layout = () => {
               <path
                 d="M1 8L35 8"
                 stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 d="M28 1L35 8L28 15"
                 stroke="white"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </button>
         </div>
-        <img src={womanImage} alt="" />
+        <img src={womanImage} alt="sehvlet" />
       </section>
     </>
   );
