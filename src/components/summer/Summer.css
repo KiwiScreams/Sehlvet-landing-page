@@ -1,0 +1,28 @@
+.summer--component
+{
+    padding: 0 85px 0 100px;
+    margin-top: 100px;
+    width: 100%;
+}
+.summer--component h2
+{
+    font-size: var(--font-size-24px);
+    color: var(--dark-clr);
+    border-bottom: 2px solid var(--brown-clr);
+    width: fit-content;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.summer--component h2 span
+{
+    font-size: var(--font-size-36px);
+}
+.summer--component .summer-header p
+{
+    color: var(--dark-clr);
+    font-size: var(--font-size-18px);
+}
+.summer--component .summer-header
+{
+    margin-bottom: 14px;
+}
