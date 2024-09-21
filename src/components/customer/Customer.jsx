@@ -44,9 +44,9 @@ const Customer = () => {
         </div>
         <div className="customer-body">
           <div className="slider">
-            <img src={testimonials[currentIndex].image} alt="" />
+            <img src={testimonials[currentIndex].image} alt="sehlvet" />
             <div className="text-container">
-              <img src={img2} alt="" />
+              <img src={img2} alt="sehlvet" />
               <p>{testimonials[currentIndex].text}</p>
               <h4>{testimonials[currentIndex].name}</h4>
               <span>{testimonials[currentIndex].title}</span>

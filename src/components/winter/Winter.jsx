@@ -19,8 +19,8 @@ const Winter = () => {
               services are super fast and we update within 24 hours.
             </p>
             <div className="img-container">
-              <img src={img1} alt="" />
-              <img src={img2} alt="" />
+              <img src={img1} alt="sehlvet" />
+              <img src={img2} alt="sehlvet" />
             </div>
           </div>
           <div className="right-container">
