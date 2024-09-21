@@ -57,30 +57,15 @@ const Header = () => {
           <NavLink to="/">Sehlvet</NavLink>
         </h1>
         <nav className={`${isMenuOpen ? "open" : "closed"}`}>
-          <NavLink
-            to="/"
-            className={({ isActive }) => (isActive ? "active" : "")}
-          >
-            Home
-          </NavLink>
-          <NavLink
-            to="/collections"
-            className={({ isActive }) => (isActive ? "active" : "")}
-          >
-            Collections
-          </NavLink>
-          <NavLink
-            to="/brands"
-            className={({ isActive }) => (isActive ? "active" : "")}
-          >
-            Brands
-          </NavLink>
-          <NavLink
-            to="/about"
-            className={({ isActive }) => (isActive ? "active" : "")}
-          >
-            About Us
-          </NavLink>
+          {nav.map((item) => (
+            <NavLink
+              key={item.to}
+              to={item.to}
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              {item.label}
+            </NavLink>
+          ))}
         </nav>
         <div className="icons">
           <img src={bookmarkIcon} alt="bookmark icon" />
