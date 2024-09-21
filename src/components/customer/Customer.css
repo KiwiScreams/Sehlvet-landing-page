@@ -1,6 +1,129 @@
 .customer--component
 {
+    padding: 0 85px 0 100px;
     width: 100%;
-    height: 100vh;
-    background-color: red;
+    margin-top: 125px;
+    margin-bottom: 176px;
+}
+.customer--component h2
+{
+    font-size: var(--font-size-24px);
+    color: var(--dark-clr);
+    border-bottom: 2px solid var(--brown-clr);
+    width: fit-content;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+}
+.customer--component h2 span
+{
+    font-size: var(--font-size-36px);
+}
+.customer--component .customer-header p
+{
+    color: var(--dark-clr);
+    font-size: var(--font-size-18px);
+    width: fit-content;
+    margin-left: auto;
+}
+.customer--component .customer-header
+{
+    margin-bottom: 14px;
+}
+.customer--component .btn-container
+{
+    margin-top: auto;
+    gap: 28px;
+    display: flex;
+}
+.customer--component button
+{
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 2px solid var(--brown-clr);
+    border-radius: 16px;
+}
+.customer--component button:hover
+{
+    background-color: var(--brown-clr);
+}
+.customer--component button:hover svg > path
+{
+    stroke: var(--white-clr);
+}
+.customer--component .customer-body
+{
+    display: flex;
+    justify-content: space-between;
+}
+.customer--component .customer-body div:nth-child(1)
+{
+    display: flex;
+    gap: 40px;
+    width: 70%;
+}
+.customer--component .customer-body div:nth-child(1) .text-container img
+{
+    display: block;
+    margin-top: 46px;
+    margin-bottom: 52px;
+}
+.customer--component .customer-body div:nth-child(1) .text-container p
+{
+    font-size: var(--font-size-18px);
+    color: var(--dark-clr);
+    margin-bottom: 124px;
+}
+.customer--component .customer-body div:nth-child(1) .text-container h4
+{
+    font-size: var(--font-size-24px);
+    margin-bottom: 12px;
+    color: var(--dark-clr);
+}
+@media screen and (max-width: 1000px)
+{
+    .customer--component
+    {
+        padding: 0 10px 0 10px;
+    }
+    .customer--component .customer-body
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+    .customer--component .btn-container
+    {
+        margin-left: auto;
+    }
+    .customer--component .customer-body div:nth-child(1)
+    {
+        gap: 10px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 700px)
+{
+    .customer--component .customer-body
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+    .customer--component .btn-container
+    {
+        margin-left: auto;
+    }
+    .customer--component .customer-body div:nth-child(1)
+    {
+        gap: 10px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .customer--component .customer-body div:nth-child(1) .text-container img
+    {
+        display: block;
+        margin-top: 16px;
+        margin-bottom: 12px;
+        transform: scale(0.8);
+    }
 }
