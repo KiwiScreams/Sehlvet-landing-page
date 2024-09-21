@@ -29,3 +29,11 @@
 {
     margin-bottom: 14px;
 }
+.customer--component button
+{
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 2px solid var(--brown-clr);
+    border-radius: 16px;
+}
