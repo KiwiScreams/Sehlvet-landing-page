@@ -25,7 +25,7 @@ const Winter = () => {
           </div>
           <div className="right-container">
             <button>
-              View All
+              Explore
               <svg
                 width="36"
                 height="16"
