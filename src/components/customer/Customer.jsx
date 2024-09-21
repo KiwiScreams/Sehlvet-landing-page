@@ -1,7 +1,7 @@
 import "./Customer.css";
 import img1 from "../../assets/images/images/Rectangle 23.png";
 import img2 from "../../assets/images/icons/g.svg";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 const Customer = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const testimonials = [
