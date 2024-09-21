@@ -7,7 +7,7 @@ const Winter = () => {
           <h2>
             <span>Winter</span> Collections
           </h2>
-          <p>We consider  your look and comfort on cold  weather.</p>
+          <p>We consider your look and comfort on cold weather.</p>
         </div>
       </section>
     </>

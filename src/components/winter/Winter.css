@@ -1,0 +1,28 @@
+.winter--component
+{
+    padding: 0 85px 0 100px;
+    margin-top: 130px;
+    width: 100%;
+}
+.winter--component h2
+{
+    font-size: var(--font-size-24px);
+    color: var(--dark-clr);
+    border-bottom: 2px solid var(--brown-clr);
+    width: fit-content;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.winter--component h2 span
+{
+    font-size: var(--font-size-36px);
+}
+.winter--component .winter-header p
+{
+    color: var(--dark-clr);
+    font-size: var(--font-size-18px);
+}
+.winter--component .winter-header
+{
+    margin-bottom: 14px;
+}
