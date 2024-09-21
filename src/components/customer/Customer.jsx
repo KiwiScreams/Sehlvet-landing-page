@@ -1,7 +1,38 @@
 import "./Customer.css";
 import img1 from "../../assets/images/images/Rectangle 23.png";
 import img2 from "../../assets/images/icons/g.svg";
+import { useState, useEffect } from "react";
 const Customer = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const testimonials = [
+    {
+      image: img1,
+      text: "Ladiesvibe provided me the exact quality product I wanted. I'm very much satisfied by their quick delivery process. They delivered my dress within a day.",
+      name: "Jane Bennet",
+      title: "Fashion Model",
+    },
+    {
+      image: img1,
+      text: "I was impressed by the quality of the product and the customer service was excellent. I would definitely recommend Ladiesvibe to my friends.",
+      name: "John Doe",
+      title: "Software Engineer",
+    },
+    {
+      image: img1,
+      text: "I was skeptical at first, but the product exceeded my expectations. The delivery was fast and the packaging was great.",
+      name: "Emily Chen",
+      title: "Marketing Manager",
+    },
+  ];
+  const handleNext = () => {
+    setCurrentIndex((currentIndex + 1) % testimonials.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex(
+      (currentIndex - 1 + testimonials.length) % testimonials.length
+    );
+  };
   return (
     <>
       <section className="customer--component">
@@ -12,21 +43,17 @@ const Customer = () => {
           <p>We value our customer's feedback to provide the best service.</p>
         </div>
         <div className="customer-body">
-          <div>
-            <img src={img1} alt="" />
+          <div className="slider">
+            <img src={testimonials[currentIndex].image} alt="" />
             <div className="text-container">
               <img src={img2} alt="" />
-              <p>
-                Ladiesvibe provided me the exact quality product I wanted. I'm
-                very much satisfied by their quick delivery process. They
-                delivered my dress within a day.
-              </p>
-              <h4>Jane Bennet</h4>
-              <span>Fashion Model</span>
+              <p>{testimonials[currentIndex].text}</p>
+              <h4>{testimonials[currentIndex].name}</h4>
+              <span>{testimonials[currentIndex].title}</span>
             </div>
           </div>
           <div className="btn-container">
-            <button>
+            <button className="prev" onClick={handlePrev}>
               <svg
                 width="8"
                 height="14"
@@ -43,7 +70,7 @@ const Customer = () => {
                 />
               </svg>
             </button>
-            <button>
+            <button className="next" onClick={handleNext}>
               <svg
                 width="8"
                 height="14"
