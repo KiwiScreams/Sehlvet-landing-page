@@ -4,6 +4,9 @@ import { useLocation } from "react-router-dom";
 const NotFound = () => {
   const pageNames = {
     "/about": "About Us",
+    "/collections": "Collections",
+    "/brands": "Brands",
+    "/": "Home",
   };
   const location = useLocation();
   const currentPageName = pageNames[location.pathname] || "Unknown Page";
