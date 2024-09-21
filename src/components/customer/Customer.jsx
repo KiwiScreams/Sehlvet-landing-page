@@ -1,7 +1,7 @@
 import "./Customer.css";
 import img1 from "../../assets/images/images/Rectangle 23.png";
 import img2 from "../../assets/images/icons/g.svg";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 const Customer = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const testimonials = [
@@ -44,9 +44,9 @@ const Customer = () => {
         </div>
         <div className="customer-body">
           <div className="slider">
-            <img src={testimonials[currentIndex].image} alt="" />
+            <img src={testimonials[currentIndex].image} alt="sehlvet" />
             <div className="text-container">
-              <img src={img2} alt="" />
+              <img src={img2} alt="sehlvet" />
               <p>{testimonials[currentIndex].text}</p>
               <h4>{testimonials[currentIndex].name}</h4>
               <span>{testimonials[currentIndex].title}</span>
@@ -64,9 +64,9 @@ const Customer = () => {
                 <path
                   d="M7 13L1 7L7 1"
                   stroke="#754F23"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </button>
@@ -81,9 +81,9 @@ const Customer = () => {
                 <path
                   d="M1 13L7 7L1 1"
                   stroke="#754F23"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </button>

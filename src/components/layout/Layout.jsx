@@ -1,5 +1,4 @@
 import "./Layout.css";
-import arrowIcon from "../../assets/images/icons/arrow.svg";
 import womanImage from "../../assets/images/images/Group 57.png";
 const Layout = () => {
   return (

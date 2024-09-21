@@ -4,7 +4,7 @@ import NotFound from "./pages/not found/NotFound";
 import Header from "./components/shared/header/Header";
 import Footer from "./components/shared/footer/Footer";
 import { useLocation } from "react-router-dom";
-import { useEffect, usestate } from "react";
+import { useEffect } from "react";
 function App() {
   const location = useLocation();
   useEffect(() => {
