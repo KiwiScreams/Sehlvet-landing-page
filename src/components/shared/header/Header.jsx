@@ -7,6 +7,12 @@ import { useRef } from "react";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const mobileHeaderRef = useRef(null);
+  const nav = [
+    { to: "/", label: "Home" },
+    { to: "/collections", label: "Collections" },
+    { to: "/brands", label: "Brands" },
+    { to: "/about", label: "About Us" },
+  ];
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -28,12 +34,7 @@ const Header = () => {
           <NavLink to="/">Sehlvet</NavLink>
         </h1>
         <nav>
-          {[
-            { to: "/", label: "Home" },
-            { to: "/collections", label: "Collections" },
-            { to: "/brands", label: "Brands" },
-            { to: "/about", label: "About Us" },
-          ].map((item) => (
+          {nav.map((item) => (
             <NavLink
               key={item.to}
               to={item.to}
