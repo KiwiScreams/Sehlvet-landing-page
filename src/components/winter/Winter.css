@@ -29,3 +29,31 @@
 {
     margin-bottom: 14px;
 }
+.winter--component .winter-body
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 55px;
+}
+.winter--component .winter-body .img-container
+{
+    position: relative;
+}
+.winter--component .winter-body .img-container img:nth-child(1)
+{
+    margin-left: auto;
+    display: block;
+    margin-top: 25px;
+}
+.winter--component .winter-body p
+{
+    color: var(--dark-clr);
+    font-size: var(--font-size-18px);
+}
+.winter--component .winter-body .img-container img:nth-child(2)
+{
+    position: absolute;
+    left: -9px;
+    bottom: 0;
+}
