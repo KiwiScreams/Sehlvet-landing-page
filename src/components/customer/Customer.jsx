@@ -2,7 +2,7 @@ import "./Customer.css";
 const Customer = () => {
   return (
     <>
-      <section className="custumer--component">
+      <section className="customer--component">
         <div className="customer-header">
           <h2>
             What our <span>Customer Says</span>
