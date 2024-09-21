@@ -1,3 +1,13 @@
+@font-face
+{
+    font-family: "wilkysta";
+    src: url(../../assets/fonts/wilkysta/Wilkysta.woff);
+}
+@font-face
+{
+    font-family: "fair";
+    src: url(../../assets/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf);
+}
 .layout--component
 {
     width: 100%;
@@ -16,12 +26,14 @@
     font-size: var(--font-size-96px);
     margin-bottom: 40px;
     color: var(--dark-clr);
-    font-family: Wilkysta, serif;
+    font-family: "wilkysta";
+    font-weight: lighter;
 }
 .layout--component p
 {
     color: var(--dark-clr);
     margin-bottom: 100px;
+    font-family: "fair";
 }
 .layout--component button
 {
