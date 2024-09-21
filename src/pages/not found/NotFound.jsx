@@ -21,7 +21,7 @@ const NotFound = () => {
             <h2>Oops...</h2>
             <p>
               We couldn't find the page you're looking for: 
-               {currentPageName}. Please check the URL or return
+               <strong> {currentPageName}</strong>. Please check the URL or return
               to the homepage.
             </p>
           </div>
