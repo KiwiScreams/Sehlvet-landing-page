@@ -16,6 +16,7 @@
     font-size: var(--font-size-96px);
     margin-bottom: 40px;
     color: var(--dark-clr);
+    font-family: Wilkysta, serif;
 }
 .layout--component p
 {
