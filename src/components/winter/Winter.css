@@ -78,7 +78,45 @@
     color: var(--white-clr);
     background-color: var(--brown-clr);
 }
+.winter--component .right-container p
+{
+    width: 80%;
+    margin-left: auto;
+}
 .winter--component button:hover svg > path
 {
     stroke: var(--white-clr);
+}
+@media screen and (max-width: 1200px)
+{
+    .winter--component
+    {
+        padding: 0 10px 0 10px;
+    }
+}
+@media screen and (max-width: 800px)
+{
+    .winter--component .winter-body
+    {
+        flex-direction: column;
+    }
+    .winter--component .right-container p
+    {
+        width: 100%;
+        margin-left: auto;
+    }
+    .winter--component .right-container
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .winter--component button
+    {
+        margin-top: 50px;
+    }
+    .winter--component .winter-body .img-container img:nth-child(2)
+    {
+        left: 50%;
+        transform: translate(-50%);
+    }
 }
