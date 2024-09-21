@@ -133,5 +133,13 @@
     .summer--component img
     {
         margin: auto;
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .summer--component .summer-body .left-container p,
+    .summer--component .summer-body .right-container p
+    {
+        width: 100%;
     }
 }
