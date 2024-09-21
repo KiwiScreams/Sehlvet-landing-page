@@ -25,7 +25,7 @@ const Customer = () => {
               <span>Fashion Model</span>
             </div>
           </div>
-          <div>
+          <div className="btn-container">
             <button>
               <svg
                 width="8"

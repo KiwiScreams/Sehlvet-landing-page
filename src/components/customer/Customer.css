@@ -3,6 +3,7 @@
     padding: 0 85px 0 100px;
     width: 100%;
     margin-top: 125px;
+    margin-bottom: 176px;
 }
 .customer--component h2
 {
@@ -29,6 +30,12 @@
 {
     margin-bottom: 14px;
 }
+.customer--component .btn-container
+{
+    margin-top: auto;
+    gap: 28px;
+    display: flex;
+}
 .customer--component button
 {
     width: 60px;
@@ -36,4 +43,41 @@
     background-color: transparent;
     border: 2px solid var(--brown-clr);
     border-radius: 16px;
+}
+.customer--component button:hover
+{
+    background-color: var(--brown-clr);
+}
+.customer--component button:hover svg > path
+{
+    stroke: var(--white-clr);
+}
+.customer--component .customer-body
+{
+    display: flex;
+    justify-content: space-between;
+}
+.customer--component .customer-body div:nth-child(1)
+{
+    display: flex;
+    gap: 40px;
+    width: 70%;
+}
+.customer--component .customer-body div:nth-child(1) .text-container img
+{
+    display: block;
+    margin-top: 46px;
+    margin-bottom: 52px;
+}
+.customer--component .customer-body div:nth-child(1) .text-container p
+{
+    font-size: var(--font-size-18px);
+    color: var(--dark-clr);
+    margin-bottom: 124px;
+}
+.customer--component .customer-body div:nth-child(1) .text-container h4
+{
+    font-size: var(--font-size-24px);
+    margin-bottom: 12px;
+    color: var(--dark-clr);
 }
