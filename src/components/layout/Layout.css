@@ -16,11 +16,14 @@
     font-size: var(--font-size-96px);
     margin-bottom: 40px;
     color: var(--dark-clr);
+    font-family: "wilkysta";
+    font-weight: lighter;
 }
 .layout--component p
 {
     color: var(--dark-clr);
     margin-bottom: 100px;
+    font-family: "fair";
 }
 .layout--component button
 {
@@ -68,6 +71,7 @@
     {
         padding: 0 10px 0 10px;
         animation: none;
+        margin-bottom: 146px;
     }
 }
 @media screen and (max-width: 900px)
@@ -83,5 +87,11 @@
     .layout--component img
     {
         display: none;
+    }
+    .layout--component h1
+    {
+        font-size: 60px;
+        margin-bottom: 40px;
+        color: var(--dark-clr);
     }
 }

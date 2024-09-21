@@ -23,6 +23,21 @@
   --font-size-18px: 18px;
   --font-size-96px: 96px;
 }
+@font-face
+{
+  font-family: "wilkysta";
+  src: url(./assets/fonts/wilkysta/Wilkysta.woff);
+}
+@font-face
+{
+  font-family: "wilkysta2";
+  src: url(./assets/fonts/wilkysta/Wilkysta.woff2);
+}
+@font-face
+{
+  font-family: "fair";
+  src: url(./assets/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf);
+}
 button, a
 {
   cursor: pointer;
@@ -47,4 +62,13 @@ body
 {
   background-color: var(--brown-clr);
   border-radius: 10px;
+}
+p
+{
+  font-family: "fair";
+}
+h2
+{
+  font-family: "wilkysta2";
+  font-weight: lighter;
 }
