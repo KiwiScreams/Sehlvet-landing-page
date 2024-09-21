@@ -64,9 +64,9 @@ const Customer = () => {
                 <path
                   d="M7 13L1 7L7 1"
                   stroke="#754F23"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </button>
@@ -81,9 +81,9 @@ const Customer = () => {
                 <path
                   d="M1 13L7 7L1 1"
                   stroke="#754F23"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </button>
